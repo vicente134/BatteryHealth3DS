@@ -1,4 +1,4 @@
-# 🔋 BatteryHealth3DS 
+# 🔋 BatteryHealth3DS — con Bati Bot 🤖
 
 > **Creado y desarrollado por [ElVichoPo (@vicente134)](https://github.com/vicente134)**  
 > ⭐ **¿Te gustó la aplicación o te ayudó a diagnosticar tu consola? ¡No olvides dejarle una Estrella (Star) de favorito arriba a la derecha en el repositorio para apoyar el proyecto!** ⭐
@@ -11,32 +11,50 @@ Cuenta con **Bati Bot**, un mini asistente interactivo animado en la pantalla t�
 
 ---
 
-## 📷 Instalación Directa por Código QR (FBI)
+## 🚀 3 Formas de Instalar y Ejecutar en tu 3DS / 2DS
 
-Este código QR está alojado directamente en GitHub y apunta siempre a la última versión oficial del archivo `.cia`:
+### Opción 1: 📡 Enviar por Wi-Fi con `3dslink` (Recomendado — Guarda la app en tu Homebrew Launcher)
 
-<p align="center">
-  <img src="assets/qr_fbi_install.png" alt="QR de Instalación FBI - BatteryHealth3DS" width="260" />
-</p>
+Cuando envías la aplicación por **`3dslink`**, tu consola la abre al instante **y además la guarda automáticamente en tu tarjeta SD (`SD:/3ds/`)** para siempre:
 
-### Pasos para instalar con la cámara en FBI:
-1. Abre **FBI** en tu consola Nintendo 3DS / 2DS.
-2. Entra en **`Remote Install`** -> **`Scan QR Code`**.
-3. Apunta la cámara al código QR de arriba y presiona **`A`** para confirmar la instalación.
-4. Sal al **Menú HOME**, abre el regalo de **BatteryHealth3DS** y disfruta junto a **Bati Bot**.
+1. En tu consola 3DS / 2DS, abre **The Homebrew Launcher** y presiona el botón **`Y`** (*NetLoader*). Verás en pantalla la **IP de tu consola** (por ejemplo `192.168.1.40`, puerto `17491`).
+2. En tu PC (Windows, Linux o Mac):
+   - **Si ya tienes `3dslink` (devkitPro) instalado:**
+     ```bash
+     3dslink -a <IP_DE_TU_CONSOLA> BatteryHealth3DS.3dsx
+     ```
+   - **Si NO tienes `3dslink` instalado:** Puedes usar el script automático incluido en este repositorio ([`send_to_3ds.py`](send_to_3ds.py)), que descarga el `.3dsx` y lo envía por Wi-Fi usando solo Python:
+     ```bash
+     python3 send_to_3ds.py <IP_DE_TU_CONSOLA>
+     ```
 
 ---
 
-## 📥 Descarga Directa desde GitHub (Sin cámara)
+### Opción 2: 💾 Copiar a la Tarjeta MicroSD o Descarga Directa (Sin cámara)
 
-Si prefieres no usar la cámara o quieres pasar los archivos manualmente a tu tarjeta MicroSD (o por FTPD / `3dslink`):
+Si prefieres descargar el archivo en tu PC o celular y pasarlo a tu tarjeta MicroSD (o por **FTPD**):
 
-- 📦 **Descargar instalador `.CIA` (Menú HOME):**  
-  👉 [**Descargar `BatteryHealth3DS.cia` (Enlace Directo)**](https://github.com/vicente134/BatteryHealth3DS/releases/latest/download/BatteryHealth3DS.cia)
-- 🎮 **Descargar ejecutable `.3DSX` (The Homebrew Launcher):**  
-  👉 [**Descargar `BatteryHealth3DS.3dsx` (Enlace Directo)**](https://github.com/vicente134/BatteryHealth3DS/releases/latest/download/BatteryHealth3DS.3dsx)
+- 🎮 **Para The Homebrew Launcher (`.3DSX` — Recomendado y 100% compatible):**  
+  👉 [**Descargar `BatteryHealth3DS.3dsx` (Enlace Directo)**](https://github.com/vicente134/BatteryHealth3DS/releases/latest/download/BatteryHealth3DS.3dsx)  
+  *(Cópialo dentro de la carpeta **`/3ds/`** de tu tarjeta MicroSD y ábrelo desde **The Homebrew Launcher**).*
+
+- 📦 **Para instalar en el Menú HOME (`.CIA`):**  
+  👉 [**Descargar `BatteryHealth3DS.cia` (Enlace Directo)**](https://github.com/vicente134/BatteryHealth3DS/releases/latest/download/BatteryHealth3DS.cia)  
+  *(Cópialo dentro de la carpeta **`/cias/`** de tu MicroSD e instálalo con **FBI**).*
+
 - 📂 **Ver todas las versiones y notas de lanzamiento:**  
   👉 [**Ir a la página de Releases en GitHub**](https://github.com/vicente134/BatteryHealth3DS/releases/latest)
+
+---
+
+### Opción 3: 📷 Códigos QR para Descarga desde la Consola (No caducan)
+
+Estos códigos QR están alojados directamente en GitHub y nunca caducan:
+
+| QR para `.3DSX` (Universal-Updater / Navegador) | QR para `.CIA` (FBI -> Remote Install -> Scan QR) |
+| :---: | :---: |
+| <img src="assets/qr_3dsx_download.png" alt="QR 3DSX BatteryHealth3DS" width="220" /> | <img src="assets/qr_fbi_install.png" alt="QR CIA FBI BatteryHealth3DS" width="220" /> |
+| Descarga `BatteryHealth3DS.3dsx` | Descarga `BatteryHealth3DS.cia` |
 
 ---
 
@@ -54,6 +72,7 @@ Si prefieres no usar la cámara o quieres pasar los archivos manualmente a tu ta
     - **$60\text{ mV} < \Delta V \le 150\text{ mV}$:** 🟡 **Desgaste Moderado** (envejecimiento químico normal).
     - **$\Delta V > 150\text{ mV}$ (o caída de barras):** 🔴 **Salud Crítica** (recomendación amigable de reemplazo).
 - 🤖 **Asistente Interactivo "Bati Bot":**
+  - Animación de respiración, movimiento de pupilas y parpadeo en tiempo real.
   - Tócalo con el lápiz táctil para escuchar su sonido `"Woupp!"` y recorrer sus **10 consejos de emergencia y cuidado**.
   - Música ambiental integrada con botón táctil **`♪ ON / OFF [Y]`**.
   - Soporte multilenguaje con detección automática del sistema (**Español, Inglés, Portugués y Francés**) y cambio rápido con **`SELECT`**.
