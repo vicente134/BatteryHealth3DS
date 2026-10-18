@@ -61,16 +61,6 @@ Si prefieres no usar la cámara o quieres pasar los archivos manualmente a tu ta
 
 ---
 
-## 🛠️ Compilación desde el Código Fuente (devkitPro)
-
-Requiere tener instalado el grupo `3ds-dev` (`devkitARM`, `libctru`, `citro2d`, `citro3d`):
-
-```bash
-git clone https://github.com/vicente134/BatteryHealth3DS.git
-cd BatteryHealth3DS
-make
-```
-
 ---
 
 ## ❤️ Créditos y Apoyo
