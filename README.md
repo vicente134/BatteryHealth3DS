@@ -1,4 +1,4 @@
-# 🔋 BatteryHealth3DS — con Bati Bot 🤖
+# 🔋 BatteryHealth3DS 
 
 > **Creado y desarrollado por [ElVichoPo (@vicente134)](https://github.com/vicente134)**  
 > ⭐ **¿Te gustó la aplicación o te ayudó a diagnosticar tu consola? ¡No olvides dejarle una Estrella (Star) de favorito arriba a la derecha en el repositorio para apoyar el proyecto!** ⭐
