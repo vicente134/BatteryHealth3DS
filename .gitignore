@@ -1,0 +1,11 @@
+build/
+*.elf
+*.map
+*.lst
+tools/makerom
+tools/bannertool
+3ds-battery-health.3dsx
+3ds-battery-health.cia
+3ds-battery-health.smdh
+BatteryHealth3DS.3dsx
+BatteryHealth3DS.cia
