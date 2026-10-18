@@ -1,4 +1,4 @@
-# 🔋 BatteryHealth3DS — con Bati Bot 🤖
+# 🔋 BatteryHealth3DS 
 
 > **Creado y desarrollado por [ElVichoPo (@vicente134)](https://github.com/vicente134)**  
 > ⭐ **¿Te gustó la aplicación o te ayudó a diagnosticar tu consola? ¡No olvides dejarle una Estrella (Star) de favorito arriba a la derecha en el repositorio para apoyar el proyecto!** ⭐
@@ -54,7 +54,6 @@ Si prefieres no usar la cámara o quieres pasar los archivos manualmente a tu ta
     - **$60\text{ mV} < \Delta V \le 150\text{ mV}$:** 🟡 **Desgaste Moderado** (envejecimiento químico normal).
     - **$\Delta V > 150\text{ mV}$ (o caída de barras):** 🔴 **Salud Crítica** (recomendación amigable de reemplazo).
 - 🤖 **Asistente Interactivo "Bati Bot":**
-  - Animación de respiración, movimiento de pupilas y parpadeo en tiempo real.
   - Tócalo con el lápiz táctil para escuchar su sonido `"Woupp!"` y recorrer sus **10 consejos de emergencia y cuidado**.
   - Música ambiental integrada con botón táctil **`♪ ON / OFF [Y]`**.
   - Soporte multilenguaje con detección automática del sistema (**Español, Inglés, Portugués y Francés**) y cambio rápido con **`SELECT`**.
