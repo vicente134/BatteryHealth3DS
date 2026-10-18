@@ -11,7 +11,7 @@ Cuenta con **Bati Bot**, un mini asistente interactivo animado en la pantalla t�
 
 ---
 
-## 📷 Instalación Directa por Código QR (FBI — No caduca)
+## 📷 Instalación Directa por Código QR (FBI)
 
 Este código QR está alojado directamente en GitHub y apunta siempre a la última versión oficial del archivo `.cia`:
 
